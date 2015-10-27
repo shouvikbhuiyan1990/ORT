@@ -1,0 +1,610 @@
+
+/*
+   	Reset CSS
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clear-fix {
+    clear: both;
+}
+/*
+   	Module-wise CSS
+*/
+#applicationCont{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+#applicationCont > label{
+	position: absolute;
+	right: 229px;
+	top: 19px;
+}
+/* Start: Review Panel CSS*/
+.review-tool-panel {text-align: center;}
+.review-tool-panel .panel-content{position: relative;
+	background: #ff6600;
+	width: 500px;
+	display: inline-block;
+}
+.review-tool-panel .panel-content:hover {cursor: move;}
+.review-tool-panel .panel-content ul {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+.review-tool-panel .panel-content ul li {
+	display: inline-block;
+	padding: 4px 13px 4px 0;
+	text-align: center;
+	min-width: 2px;
+	min-height: 25px;
+}
+.review-tool-panel .panel-content ul li span.divider{
+	background: url("/review-tool/images/sprite.png") no-repeat -145px 7px;
+	min-width: 2px;
+	min-height: 26px;
+	display: inline-block;
+	margin: 0 0 0 13px;
+}
+.review-tool-panel .panel-content ul li a {
+	display: inline-block;
+	width: 18px;
+	height: 17px;
+}
+.grid-icon.disabled{
+	background: url("/review-tool/images/sprite.png") no-repeat -18px 0;
+	cursor: default;
+}
+.list-icon.disabled{
+	background: url("/review-tool/images/sprite.png") no-repeat -54px 0;
+	cursor: default;
+}
+.btnExport{
+	background: url("/review-tool/images/sprite.png") no-repeat -227px 0;
+}
+.grid-icon{
+	background: url("/review-tool/images/sprite.png") no-repeat 0px 0;
+}
+.list-icon{
+	background: url("/review-tool/images/sprite.png") no-repeat -36px 0;
+}
+.add-icon{
+	background: url("/review-tool/images/sprite.png") no-repeat -72px 0;
+}
+.add-icon.list {
+	background: url("/review-tool/images/sprite.png") no-repeat -90px 0;
+	cursor: default;
+}
+.save-icon{
+	background: url("/review-tool/images/sprite.png") no-repeat -108px 0;
+}
+.cancel-icon{
+	background: url("/review-tool/images/sprite.png") no-repeat -126px 0;
+}
+.review-tool-panel .panel-content ul li span {
+	display: block;
+	font-family: arial;
+	font-size: 12px;
+}
+.review-tool-panel span.panel-left-bottom, .review-tool-panel span.panel-right-bottom {position: absolute;top: 0;}
+.review-tool-panel .panel-left-bottom {left: 0;width: 0;height: 0;border-style: solid;border-width: 62px 0 0 62px;border-color: transparent transparent transparent #ffffff;}
+.review-tool-panel .panel-right-bottom {right: 0;width: 0;height: 0;border-style: solid;border-width: 0 0 62px 62px;border-color: transparent transparent #ffffff transparent;}
+.review-tool-panel .panel-toggler {position: absolute;}
+/* End: Review Panel CSS*/
+
+#applicationCont input[type="checkbox"].checkbox-switch { 
+	position: absolute;
+	opacity: 0;
+}
+#applicationCont input[type="checkbox"].checkbox-switch + div {
+	vertical-align: middle;
+	width: 40px;	height: 20px;
+	border: 1px solid rgba(0,0,0,.4);
+	border-radius: 999px;
+	background-color: rgba(0, 0, 0, 0.1);
+	-webkit-transition-duration: .4s;
+	-webkit-transition-property: background-color, box-shadow;
+	box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+	cursor: pointer;
+}
+#applicationCont input[type="checkbox"].checkbox-switch:checked + div {
+	width: 40px;
+	background-position: 0 0;
+	background-color: #ff6600;
+	border: 1px solid #ff6600;
+	box-shadow: inset 0 0 0 10px #ff6600;
+}
+#applicationCont input[type="checkbox"].bigswitch.checkbox-switch + div {
+	width: 50px;	height: 25px;
+}
+#applicationCont input[type="checkbox"].checkbox-switch + div > div {
+	float: left;
+	width: 18px; height: 18px;
+	border-radius: inherit;
+	background: #ffffff;
+	-webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+	-webkit-transition-duration: 0.4s;
+	-webkit-transition-property: transform, background-color, box-shadow;
+	-moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+	-moz-transition-duration: 0.4s;
+	-moz-transition-property: transform, background-color;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+	margin-top: 1px;
+	margin-left: 1px;
+}
+#applicationCont input[type="checkbox"].checkbox-switch:checked + div > div {
+	-webkit-transform: translate3d(20px, 0, 0);
+	-moz-transform: translate3d(20px, 0, 0);
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+#applicationCont input[type="checkbox"].bigswitch.checkbox-switch + div > div {
+	width: 23px; height: 23px;
+	margin-top: 1px;
+}
+#applicationCont input[type="checkbox"].bigswitch.checkbox-switch:checked + div > div {
+	-webkit-transform: translate3d(25px, 0, 0);
+	-moz-transform: translate3d(16px, 0, 0);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3), 0px 0px 0 1px rgba(8, 80, 172,1);
+}
+
+.comment-box{
+	width: 298px;
+	position: absolute;
+	z-index: 999;
+	left: 522px;
+	font-family: Arial;
+	font-size: 14px;
+	top: 60px;
+	height:302px;
+}
+.maximize-btn{
+	background: url("/review-tool/images/sprite.png") no-repeat -184px 0;
+	width: 18px;
+	height: 18px;
+	float: left;
+	cursor: pointer;
+	margin-left: 14px;
+	/*margin-top: 9px;*/
+}
+.collapse.notValidate .error-icon{
+	display: inline-block;
+	margin: 2px 10px;
+}
+.error-icon{
+	background: url("/review-tool/images/error-icon.png") no-repeat;
+	width: 16px;
+	height: 16px;
+	display: none;
+	margin-top: 4px;
+	float: left;
+}
+.comment-header{
+	height: 29px;
+	text-align: right;
+	background: #dddddd;
+	padding: 10px 5px 0 0;
+}
+.comment-body{
+	float: left;
+	border: 1px solid #dddddd;
+	background: #fff;
+	padding-top: 10px;
+}
+.input-wrapper,.addon-tool{
+	margin: 0px 0 6px 11px;
+	float: left;
+	width: 92%;
+}
+.input-wrapper input, .input-wrapper textarea{
+	float: right;
+	width: 58%;
+	border: 1px solid #dddddd;
+	height: 24px;
+	color: #8a9499;
+}
+.comment-btn-container{
+	float: left;
+	width: 100%;
+}
+.comment-btn-container a {
+	color: #fff;
+	text-decoration: none;
+	padding: 11px 0px;
+	text-align: center;
+	width: 50%;
+	display: inline-block;
+	float: left;
+}
+.comment-btn-container a.save-button{	
+	background: #157ddb;
+	
+}
+.comment-btn-container a.cancel-button{
+	background: #d7d7d7;
+	width: 48.5%;
+}
+.comment-header input[type="radio"] {
+    display:none; 
+}
+.comment-header label {
+	display: inline-block;
+	font-family: Arial;
+	font-size: 16px;
+	border-radius: 12px;
+	width: 14px;
+	height: 14px;
+	background: #a8a8a8;
+	margin-right: 4px;
+}
+#open-label.active{
+	background: #e43e42;
+}
+#inprogress-label.active{
+	background: #e5cb4f;
+}
+#fixed-label.active{
+	background: #46709c;
+}
+#closed-label.active{
+	background: #4ab788;
+}
+.delete-btn {
+	background: url("/review-tool/images/sprite.png") no-repeat -165px 0;
+	width: 17px;
+	height: 21px;
+	cursor: pointer;
+	margin-right: 7px;
+}
+.dragable-icon {
+	float: right;
+	padding-left: 5px;
+	background: url("/review-tool/images/drag-icon.png") no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-top: 1px;
+}
+.hide {
+	display: none;
+}
+.comment-body textarea {
+	resize: none;
+	width: 56.5%;
+	height: 80px;
+	margin-bottom: 9px;
+}
+input {
+	font-family:monospace;
+}
+.input-wrapper label{
+	color: #8a9499;
+}
+.comment-box.collapse {
+	width:100px;
+}
+.radiogroup {
+	margin-top: 3px;
+	display: inline-block;
+} 
+.comment-box.collapse .radiogroup, .comment-box.collapse .comment-body {
+	display:none;
+}
+.comment-box.collapse .delete-btn{
+	display: inline-block;
+}
+.blank-error {
+	padding-bottom: 10px;
+	color: #e43e42;
+	font-size: 12px;
+	margin: 0 0 0 10px;
+}
+.heading {
+	float: left;
+	padding: 3px 0 4px 13px;
+	color: #8a9499;
+	text-overflow: ellipsis;
+	width: 150px;
+	overflow: hidden;
+	text-align: left;
+	white-space:pre;
+}
+
+.list-view {
+	position: absolute;
+	top: 60px;
+	width: 290px;
+}
+.list-view .comment-box {
+	width: 100%;
+	position: relative;
+	margin: 0 0 2px 0;
+}
+.list-view .comment-btn-container a.cancel-button {
+	width: 50%;
+}
+.review-tool-panel .panel-content ul li.last-link {
+	background: none;
+}
+.minimize-btn{
+	background: url("/review-tool/images/sprite.png") no-repeat -205px 0;
+	width: 18px;
+	height: 18px;
+	float: left;
+	cursor: pointer;
+	margin-left: 14px;
+	margin-top: 9px;
+}
+.grid-view .save-button{
+	padding: 11px 67px;
+	float: left;
+	width: auto;
+}
+.grid-view .cancel-button{
+	padding: 11px 50px;
+	float: left;
+	width: auto !important;
+}
+.comment-box.collapse  {
+	height:auto;
+}
+.comment-toolBox{
+	float: left;
+width: 194px;
+min-height: 31px;
+margin-left: 20px;
+	}
+/* Overlay Starts */
+.overlay-shim {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	opacity: 0.4;
+	background: #000;
+	z-index: 10000;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	z-index: 10001;
+	overflow: hidden;
+	width: 25.5%;
+	min-height: 125px;
+	background: #fff;
+	padding: 10px;
+	box-shadow: 0px 0px 30px 10px #555555;
+}
+.close-link {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	background: url('/review-tool/images/close-icon.png') no-repeat;
+}
+.overlay-msg {
+	text-align: center;
+	line-height: 5.6em;
+	font-size: 22px;
+	font-family: Arial;
+	color: #8a9499;
+}
+/* Overlay Ends */.highlighter-panel {
+	position:absolute;
+	border:2px solid red;
+	background:transparent;
+	z-index:9999;
+	
+	width: 100px;
+    height: 100px;
+  
+}
+.ui-resizable {
+	position: absolute;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-icon, .ui-widget-content .ui-icon {
+background-image: url("/review-tool/images/ui-icons_222222_256x240.png");
+background-position: -64px -224px;
+
+}
+.ui-draggable-handle {
+-ms-touch-action: none;
+touch-action: none;
+}
+.highlighter {
+	display:inline-block;
+	background:green;
+	float: left;
+}
+.hide-highlighter {
+	visibility:hidden;
+}
+.palette{
+	float: left;
+}
+.comment-toolBox label{
+	background: url("/review-tool/images/sprite.png") no-repeat -270px 0;
+	width: 22px;
+	height: 22px;
+	float: left;
+	font-size: 12px;
+	color: #8a9499;
+}
+.comment-toolBox label.selected-tool {
+	background: url("/review-tool/images/sprite.png") no-repeat -316px 0;
+}
+.selected {
+  	position:relative;       
+    -webkit-box-shadow:0 1px 8px #fff;
+       -moz-box-shadow:0 1px 8px #fff;
+            box-shadow:0 1px 8px #fff;
+}
+.addon-tool{width: auto;}
+.addon-tool label{
+	background: url("/review-tool/images/sprite.png") no-repeat -292px 0;
+	width: 22px;	
+	height: 22px;
+	float: left;
+	font-size: 12px;
+	color: #8a9499;
+}
+.addon-tool label.selected-tool {
+	background: url("/review-tool/images/sprite.png") no-repeat -247px 0;
+}
+.error-message {
+	position: fixed;
+	border-top: 2px solid red;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+	bottom: 0;
+	background: #dddddd;
+	font-family: Arial;
+	color: red;
+}
+.error-message-icon {
+	position: absolute;
+	display: inline-block;
+	right: 30px;
+	height: 20px;
+	width: 24px;
+	background: red;
+	margin-top: 3px;
+	background: url("/review-tool/images/close-icon.png") no-repeat;
+	background-size: 15px 15px;
+}
+.btn-container {
+	margin-top:20px;
+}
+.btn-container a{
+	padding: 11px 0;
+	background: #157ddb;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	width: 40%;
+	margin-left: 20px;
+	font-size:14px;
+	font-family:Arial;
+}
+.btn-container a.discard-cancel {
+	background: #d7d7d7;
+}

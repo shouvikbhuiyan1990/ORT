@@ -1,0 +1,133 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta http-equiv="imagetoolbar" content="no">
+  <meta http-equiv="imagetoolbar" content="false">
+
+  <link rel="stylesheet" type="text/css" href="/fraud-enrollment/css/fraud-enrollment.css">
+  <link rel="stylesheet" href="/review-tool/css/main.css" type="text/css"/>
+  <link rel="stylesheet" href="/review-tool/css/colorpicker.css" type="text/css"/>
+  
+  <title>Online Review Tool</title>
+  <link rel="SHORTCUT ICON" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="ICON" href="/images/favicon.ico" type="image/x-icon">
+  <script language="javascript" type="text/javascript" src="/review-tool/js/vendors/jquery/jquery.js"></script>
+  <!--Include script to make review tool run-->
+  <script language="javascript" type="text/javascript" src="/review-tool/js/review.js"></script>
+  </head>
+  <body>
+  <form name="fraudInterceptForm" id="fraudInterceptForm" action="/cardmembersvcs/personalprofile/pp/EnrollAlert">
+  <div id="container">
+  
+  <!-- header -->
+  <div id="header">
+      <!-- <div id="logo">
+          <a href="javascript:void(0);"><img src="" width="152" height="38" alt="Tool Logo" title="Tool Logo"></a>
+        </div> -->
+  </div>
+  <!-- /header -->  
+  <!-- main content -->
+  <div class="content">
+
+    <!-- /app title bar -->   <!-- main container -->
+    <div id="main-content-fraud">
+      <div class="top-header">
+        <div>
+          <h1>Fight Fraud. Faster.</h1>
+          <h5>Get real-time text messages sent directly to your phone. You will know about anything unusual the moment we spot it.</h5>
+        </div>
+      </div>
+      <img src="/fraud-enrollment/images/iphone.png" width="319" height="386" alt="iphone" class="banner-img">
+      <div class="fraud-inner-content">
+          <label id="custom-label">
+           <input type="checkbox" id="checkbox" name="enrollToFraudIntercept" value="true" />
+          <span class="alert-label">Yes, I want to receive Fraud Alerts at</span></label>
+          <div class="phone-num-content">
+              <div id="phones">
+                <input type="text" size="3" maxlength="3" name="mobileAreaCode" class="ph-number input-block-1" placeholder="XXX">
+                <input type="text" size="3" maxlength="3" name="mobilePhone1" class="ph-number input-block-2" placeholder="XXX">
+                <input type="text" size="4" maxlength="4" name="mobilePhone1" class="ph-number input-block-3" placeholder="XXXX">
+              </div>
+              <a href="javascript:void(0)" class="button-small save-btn">Save</a>
+              <a href="javascript:void(0)" class="cancel-btn">Cancel</a>
+              
+               <span class="error-phone">Please enter valid phone number</span>
+              
+          </div>
+          <div class="phone-number-edit">
+              <div class="phone-number"> <span class="number-title">Your mobile phone number</span>
+          (<span class="number-block-1">XXX</span>)-<span class="number-block-2">XXX</span>-<span class="number-block-3">XXXX</span>
+                  </div>
+              <a href="javascript:void(0)" class="edit-btn">Edit</a>
+          </div>
+          <div class="contact-info">
+            <h5>Please make sure your contact information is correct.</h5>
+            <h6>If you enter a new mobile phone number, your account information will be updated.</h6>
+            <p>By providing your phone numbers, you agree that Discover, its affiliates and agents may call you at these numbers. If this is a cell phone number, you agree that we may contact you using an automatic dialer, including pre-recorded messages and/or text messages, even if your cell phone provider may charge you for calls according to your current plan. </p>
+          </div>
+          <!-- <div class="terms-content">
+            <a href="javascript:void(0)" class="terms-icon terms-condition" rel="terms-and-conditions">Text Terms and Conditions</a>
+            <p class="continue-msg">By clicking 'Continue' you agree to receive fraud text alerts at the number provided. If you do not wish to receive fraud text alerts, please uncheck the box. You will still receive fraud e-mail alerts.</p>            
+            <a href="javascript:void(0)" class="button-med continue-btn">Continue</a>            
+          </div> -->
+
+      </div>
+    </div>
+    <!-- /main container -->  </div>
+  <!-- /main content -->
+  
+
+<!--googleoff: index-->
+        <div class="clear">&nbsp;</div>
+
+ 
+  <div id="terms-and-conditions" class="hide-overlay"> 
+  <div class="terms-and-conditions">
+    
+      <h3>Text Communications and Fraud Alerts Terms of Use<a href="javascript:void(0)" class="print-page" id="print-btn" onClick="util.printPopup($('.fraud-alert-overlay').html());" title="Print">Print</a></h3>
+   
+        <ul>
+          <li>
+                <p><span></span>By signing up to receive Text Communications and/or Fraud Alerts ("Text Messages"), you agree to the following Terms of Use. If you do not agree to these Terms of Use, do not sign up for these Text Messages. Discover Financial Services ("DFS") reserves the right to change these Terms of Use, and your continued use of the Text Messages constitutes agreement to all such changes. DFS means DFS Services LLC and its affiliates.</p>
+            </li>
+            <li>
+              <h4>Uses of Text Communications and Fraud Alerts</h4>
+                <p><span></span>Our Text Messages allow you to request and receive text messages about your Account with us. It is your responsibility to determine if your mobile service provider supports text messaging and your mobile device is capable of receiving text messages. Our Text Messages are subject to the terms and conditions of your agreement(s) with your mobile device carrier. You are responsible for any fees imposed by your mobile device carrier of any kind whatsoever. You acknowledge that our Text Messages are sent to you without being encrypted and will include information pertaining to your Account. DFS reserves the right, in its sole discretion, without any obligation and without any notice requirement, to change, improve or correct the Text Messages and to suspend Text Messages for scheduled or unscheduled maintenance, upgrades, improvements or corrections. DFS may discontinue or change the product, or begin
+charging a fee for such service at any time without prior notice to you, subject to applicable law.</p>
+            </li>
+            <li>
+              <h4>Disclaimer of Warranty and Limitation of Liability</h4>
+                <p><span></span>The Text Messages are provided as a convenience to you for information purposes only. The information on the Text Messages is provided on an "AS IS," and "AS AVAILABLE" basis. DFS does not warrant the information provided herein or your use of our Text Messages generally, either expressly or impliedly, for any particular purpose and expressly disclaims any implied warranties, including but not limited to, warranties of title, non-infringement, merchantability or fitness for a particular purpose. DFS will not be responsible for any loss or damage that could result from interception by third parties of any information made available to you via our Text Messages. DFS cannot and does not guarantee the accuracy, validity, timeliness or completeness of any information or data made available to you for any particular purpose. Neither DFS, nor any of its affiliates, directors, officers or employees, nor any third party vendor, will be liable or have any responsibility of any kind for any loss or damage that you incur in the event of any failure or interruption of our Text Messages, or resulting from the act or omission of any other party involved in providing Text Messages, or from any other cause relating to your access to, inability to access, or use of the Text Messages, whether or not the circumstances giving rise to such cause may have been within the control of DFS or of any vendor providing software or services. In no event will DFS or any such parties be liable to you, whether in contract or tort, for any direct, special, indirect, consequential or incidental damages or any other damages of any kind even if DFS or any other such party has been advised of the possibility thereof. This limitation on liability includes, but is not limited to, the transmission of any viruses which may infect a user's equipment, failure of mechanical or electronic equipment or communication lines, telephone or other interconnect problems unauthorized access, theft, operator errors, strikes or other labor problems or any force majeure. DFS cannot and does not guarantee continuous, uninterrupted or secure Text Messages service.</p>
+            </li>
+            <li>
+              <h4>Miscellaneous</h4>
+                <p><span></span>These Terms of Use shall be governed by and construed in accordance with the laws of the state of Illinois, without regard to conflicts of laws provisions. Sole and exclusive jurisdiction for any action or proceeding arising out of or related to these Terms of Use shall be in an appropriate state or federal court located in the County of Lake, State of Illinois and the parties unconditionally waive their respective rights to a jury trial. Any cause of action you may have with respect to your use of this Web site must be commenced within one (1) year after the claim or cause of action arises. If for any reason a court of competent jurisdiction finds any provision of these Terms of Use, or a portion thereof, to be unenforceable, that provision shall be enforced to the maximum extent permissible so as to affect the intent of these Terms of Use, and the remainder of these Terms of Use shall continue in full force and effect. These Terms of Use constitutes the entire agreement between DFS and you with respect to Text Messages and it supersedes all prior or contemporaneous communications, agreements and understandings between DFS and you with respect to the subject matter hereof.</p>
+             </li>
+            <li class="last-element">
+              <p><span></span>These Terms of Use were last updated October 22, 2008. Please check back for updates and changes.</p> 
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div id="fade" class="fraud-alert-black-overlay"></div>
+<div class="fraud-alert-lightBox">
+            <div class="lightbox-inner">
+              <a id="cal-lightbox-close" href="javascript:void(0)" title="Close" class="close-link close-btn" aria-label=""></a>
+                <div class="fraud-alert-overlay">
+                </div> 
+            </div>
+    <div class="clear-both"></div>
+</div>
+
+<script type="text/javascript" src="/fraud-enrollment/scripts/fraud-enrollment.js"></script> 
+<div></div>
+<!-- /container -->
+</div>
+</form>
+
+ 
+</body>
+</html>

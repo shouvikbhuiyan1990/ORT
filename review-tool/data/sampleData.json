@@ -1,0 +1,26 @@
+[
+    {
+        "assignedBy": "Tester1",
+        "colorPalette": "rgb(191, 118, 191)",
+        "colorhex": "#bf76bf",
+        "comment": "Change the image.",
+        "highlighterHeight": 411,
+        "highlighterPosX": 346,
+        "highlighterPosY": 88,
+        "highlighterWidth": 301,
+        "id": "0",
+        "positionX": 663,
+        "positionY": 325,
+        "status": "open",
+        "title": "Image Change"
+        },
+        {
+        "assignedBy": "Tester2",
+        "comment": "Text Change from Edit to Update.",
+        "id": "1",
+        "positionX": 1134,
+        "positionY": 350,
+        "status": "open",
+        "title": "Text Change"
+    }
+]

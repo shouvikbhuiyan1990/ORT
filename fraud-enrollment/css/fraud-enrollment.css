@@ -1,0 +1,541 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-family: Arial,Helvetica,sans-serif;
+}
+html body {
+	background: #ffffff;
+	color: #293033;
+}
+html body #header {
+	margin: 0 auto !important;
+}
+html body #footer, html body #container, html body .content, html body .navigation-container {
+	width: 100%;
+	margin: 0;
+}
+#container {
+	width: 970px;
+	margin: 0 auto;
+	background-color: #fff;
+	min-height: 100%;
+}
+#header {
+	margin: 0 10px;
+	padding: 0;
+	font-size: .75em;
+	color: #526066;
+	width: 950px;
+	min-height: 75px;
+	position: relative;
+}
+#header #logo {
+	float: left;
+	margin: 20px 0 0 20px;
+	display: inline;
+}
+#header a {
+	color: #267bb1;
+}
+.content {
+margin: 0 10px;
+width: 950px;
+position: relative;
+}
+#main-content-fraud{
+	width: 933px;
+	border: 1px solid #dbdbdb;
+	margin: 0 auto;
+	position: relative;
+	min-height: 434px;
+	overflow: hidden;
+}
+.top-header{
+	height: 159px;
+	position: relative;
+	background: #234250; /* Old browsers */
+	background: -moz-linear-gradient(top,  #234250 0%, #244554 6%, #274c60 15%, #326484 37%, #366d92 49%, #387393 61%, #387393 91%, #316584 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#234250), color-stop(6%,#244554), color-stop(15%,#274c60), color-stop(37%,#326484), color-stop(49%,#366d92), color-stop(61%,#387393), color-stop(91%,#387393), color-stop(100%,#316584)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #234250 0%,#244554 6%,#274c60 15%,#326484 37%,#366d92 49%,#387393 61%,#387393 91%,#316584 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #234250 0%,#244554 6%,#274c60 15%,#326484 37%,#366d92 49%,#387393 61%,#387393 91%,#316584 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #234250 0%,#244554 6%,#274c60 15%,#326484 37%,#366d92 49%,#387393 61%,#387393 91%,#316584 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #234250 0%,#244554 6%,#274c60 15%,#326484 37%,#366d92 49%,#387393 61%,#387393 91%,#316584 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234250', endColorstr='#316584',GradientType=0 ); /* IE6-9 */
+
+}
+.top-header > div{
+	position: absolute;
+}
+.top-header h1{
+	float: right;
+	font-family: sans-serif;
+	font-size: 4.25em;
+	color: #fff;
+	padding: 0;
+	margin: 18px 13px 8px 0;
+	line-height: 68px;
+}
+.top-header h5{
+	float: right;
+	font-size: 1.125em;
+	color: #fff;
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	width: 52%;
+	font-weight: normal;
+	margin-right: 92px;
+	line-height: 24px;
+}
+.banner-img{
+	position: absolute;
+	top: 47px;
+	left: 13px;
+}
+.fraud-inner-content{
+	margin-left: 359px;
+	padding-top: 16px;
+}
+.fraud-inner-content h5{
+	font-size: 0.812em;
+	font-weight: bold;
+	margin: 5px 0 6px;
+}
+.fraud-inner-content h6{
+	font-size: 0.75em;
+	font-weight: normal;
+	margin-bottom: 13px;
+}
+.fraud-inner-content p{
+	font-size: 0.56em;
+	font-weight: normal;
+	margin-bottom: 18px;
+	width: 70%;
+	line-height: 12px;
+	color: #333333;
+}
+.fraud-inner-content a{
+	text-decoration:none;
+	color:#267bb1;
+	font-size: 0.87em;
+	vertical-align: text-top;
+}
+.fraud-inner-content a:hover{
+	text-decoration:underline
+}
+.fraud-inner-content .continue-msg{
+	margin-top: 10px;
+	width: 75%;
+}
+.phone-num-content{
+	position: relative;
+	display: none;
+	float: left;
+	width: 100%;
+	margin: 5px 0 0 30px;
+	min-height: 50px;
+}
+#phones{
+	display: inline-block;
+}
+.fraud-state-two #phones{
+	margin-left: 10px;
+}
+.phone-number-edit{
+	position: relative;	
+	font-size: 1em;
+	float: left;
+	width: 100%;
+	margin-left: 30px;
+	min-height: 55px;
+}
+.ph-number{
+	font-size: 1em;
+	padding: 5px 0 4px 9px;
+}
+.phone-number{
+	color: #ff6000;
+	font-size: 1.31em;
+	display: inline-block;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.fraud-inner-content .edit-btn{ text-decoration: underline;}
+#custom-label{
+	float: left;
+	width: 60%;
+	height: 27px;
+	margin-bottom: 10px;
+	-webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;   
+  -o-user-select: none;
+  user-select: none;  
+  position: relative;
+}
+.input-block-1, .input-block-2{
+	width: 42px;
+}
+.input-block-3{
+	width: 53px;
+}
+.custom-checkbox {
+	width: 22px;
+	height: 22px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	top: 10px;
+	background: url("/fraud-enrollment/images/checkox.png") no-repeat -2px -2px transparent;
+	width: 22px;
+	height: 22px;
+}
+.custom-checkbox.selected {
+	background: url("/fraud-enrollment/images/checkox.png") no-repeat 0 -43px transparent;
+	width: 31px;
+	height: 27px;
+	top: 5px;
+	left: -4px;
+}
+.terms-icon{
+	background: url("/fraud-enrollment/images/terms-content.png") no-repeat 0 2px transparent;
+	padding-left: 17px;
+	display: inline-block;
+}
+.custom-checkbox.selected input[type="checkbox"] {
+	width: 31px;
+	height: 27px;
+}
+.custom-checkbox input[type="checkbox"] {
+	margin: 0;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+	outline: none;
+	opacity: 0;
+		/* CSS hacks for older browsers */
+	_noFocusLine: expression(this.hideFocus=true);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-khtml-opacity: 0;
+	-moz-opacity: 0;
+	width: 22px;
+	height: 22px;
+}
+.custom-checkbox input[type="checkbox"] {
+	visibility: hidden;
+}
+.alert-label.active{
+	top: -5px;
+	position: relative;
+	margin: 0;
+}
+.alert-label{
+	position: absolute;
+	top: 13px;
+	left: 30px;
+	font-weight: bold;
+}
+.fraud-inner-content a.button-med, .fraud-inner-content a.button-small{
+	height: auto;
+	width: auto;
+	outline: 0;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	font-family: arial;
+	font-weight: bold;
+	background: #326484;
+	color: #fff;
+	border-bottom: 3px solid #326484;
+}
+.fraud-inner-content a.grey-button{
+	background: #cccccc;
+	color: #fff;
+	border-bottom: 2px solid #bbbbbb;
+	cursor: no-drop;
+}
+.fraud-inner-content a.button-med{
+	font-size: 1em;
+	padding: 10px 22px 8px;
+	position: absolute;
+	bottom: 19px;
+	right: 16px;
+}
+.fraud-inner-content a.button-med:hover, .fraud-inner-content a.button-small:hover {
+	background: #326484;
+	text-decoration: none;
+}
+.fraud-inner-content a.button-med:active, .fraud-inner-content a.button-small:hover  {
+	background: #326484;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+.fraud-inner-content a.grey-button:hover{
+	background: #cccccc;
+	color: #fff;
+	border-bottom: 2px solid #bbbbbb;
+	cursor: no-drop;
+}
+.fraud-inner-content a.button-small{
+	font-size: 0.875em;
+	padding: 8px 18px 6px;
+	border-bottom: 2px solid #e94d00;
+	margin-left: 7px;
+	bottom: 0px;
+}
+.cancel-btn{
+	margin-left: 4px;
+}
+
+.terms-content{
+	float: left;
+	margin-left: 30px;
+}
+.contact-info{
+	float: left;
+	margin-left: 30px;
+	visibility: hidden;
+	margin-bottom: 12px;
+	min-height: 103px;
+}
+.fraud-state-two .contact-info{
+	min-height: 0;
+}
+.contact-info p{
+	margin: 0;
+}
+.phone-number-edit, .phone-num-content{
+	float: left;
+	width: 100%;
+}
+.fraud-alert-black-overlay{
+	position: fixed;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+background-color: black;
+z-index: 1001;
+-moz-opacity: 0.7;
+opacity: .7;
+filter: alpha(opacity=70);
+display: none; 
+}
+.hide-overlay{
+	display: none;
+}
+.fraud-alert-lightBox{
+	display: none;
+	height: 447px;
+	width: 600px;
+	background: #fff;
+	z-index: 9999;
+	position: fixed;
+	padding: 20px;
+	border-radius: 4px;
+
+}
+.fraud-alert-overlay{
+	overflow: auto;
+height: 449px;
+}
+.fraud-alert-overlay h3{
+	border-bottom: 2px solid #d1d3d4;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 10px 0px 10px 0px;
+}
+.fraud-alert-overlay h3 a {
+	padding-left: 25px;
+	margin-left: 5px;
+	background: url('/fraud-enrollment/images/print-btn-image.png') no-repeat left;
+	font-size: 0.75em;
+	color: #267bb1;
+}
+.fraud-alert-lightBox .close-link {
+	font-size: 0.688em;
+	float: right;
+	cursor: pointer;
+	display: block;
+	clear: both;
+	position: absolute;
+	top: -1.2em;
+	right: -1.2em;
+	margin: 0;
+	padding-right: 1.3em;
+	color: #363d40;
+	background-color: transparent;
+	background-image: url('/fraud-enrollment/images/close-icon.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	height: 32px;
+	width: 34px;
+}
+.fraud-alert-overlay ul li {
+	width: 580px;
+	padding: 15px 0px;
+}
+.fraud-alert-overlay h4 {
+	font-size: 0.875em;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+.fraud-state-two .top-header {
+	height: 189px;
+	background: #23424f; /* Old browsers */
+	background: -moz-linear-gradient(top,  #23424f 0%, #264a5c 12%, #326687 39%, #366e93 51%, #387392 61%, #387392 91%, #316383 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#23424f), color-stop(12%,#264a5c), color-stop(39%,#326687), color-stop(51%,#366e93), color-stop(61%,#387392), color-stop(91%,#387392), color-stop(100%,#316383)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #23424f 0%,#264a5c 12%,#326687 39%,#366e93 51%,#387392 61%,#387392 91%,#316383 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #23424f 0%,#264a5c 12%,#326687 39%,#366e93 51%,#387392 61%,#387392 91%,#316383 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #23424f 0%,#264a5c 12%,#326687 39%,#366e93 51%,#387392 61%,#387392 91%,#316383 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #23424f 0%,#264a5c 12%,#326687 39%,#366e93 51%,#387392 61%,#387392 91%,#316383 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23424f', endColorstr='#316383',GradientType=0 ); /* IE6-9 */
+}
+.fraud-state-two .fraud-inner-content {
+	margin-left: 31px;
+	position: relative;
+	width: 60%;
+}
+.fraud-state-two .top-header > div {
+	position: absolute;
+	width: 65%;
+}
+.fraud-state-two .top-header h1 {
+	float: left;
+	margin: 12px 0px 7px 28px;
+	font-size: 3em;
+	font-family: sans-serif;
+	line-height: 48px;
+}
+.fraud-state-two .top-header h5 {
+	float: left;
+	margin: 0 32px;
+	font-size: 1em;
+	width: auto;
+}
+.banner-img-right{
+	position: absolute;
+	top: 28px;
+	right: 39px;
+}
+.fraud-inner-content h3{
+	font-size: 1.125em;
+	font-family: arial;
+	font-weight: bold;
+
+}
+.number-title{
+	font-size: 0.8em;
+	color: #000;
+	font-weight: normal;
+}
+.fraud-state-two .number-title{
+	font-size: 1em;
+}
+.fraud-state-two .phone-number-edit{
+	margin: 10px 0 0 0;
+	min-height: 0;
+}
+.fraud-state-two .terms-content{ margin-left: 0;}
+.fraud-state-two .phone-number{
+	font-size: 1em;
+}
+.fraud-state-two .alert-label {
+font-weight: bold;
+left: 31px;
+}
+.fraud-state-two .fraud-inner-content a.button-med{
+	position: relative;
+	margin-left: 15px;
+}
+.fraud-state-two #custom-label{
+	margin:11px 0 55px;
+	width: 100%;
+}
+
+.fraud-state-two .fraud-inner-content .continue-msg {
+margin-top: 10px;
+width: 33%;
+display: inline-block;
+
+}
+.fraud-state-two .terms-icon {
+	background: url("/fraud-enrollment/images/terms-content.png") no-repeat 0 3px transparent;
+	height: 13px;
+	display: inline-block;
+	width: 31%; 
+	margin-left: 19px;
+}
+.fraud-state-two .fraud-inner-content p{
+	width: auto;
+}
+.fraud-state-two .contact-info{
+	position: absolute;
+	width: 338px;
+	top: 87px;
+	right: 15px;
+}
+.fraud-state-two .phone-num-content {
+	margin: 3px 0 0 0;
+	min-height: 0;
+}
+.error-phone{
+	color: red;
+	font-size: 0.75em;
+	margin: 5px 0px 0px;
+	font-weight: bold;
+	display: none;
+}
+.fraud-state-two .error-phone{
+	margin-left: 206px;
+}
+.labelPos{
+	margin: -9px 0 48px !important;
+}
+.labelTop{
+	margin:5px 0px 55px !important;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+a:focus, input:focus{outline: 1px dotted #000 !important;}
+#logo a{ float: left;}
+.ph-number.error{
+	outline: 1px solid red;
+	color: #000;
+}
+.edit-number .phone-number-edit{
+	display: none;
+}
+.edit-number .phone-num-content{
+	display: block;
+}
+.edit-number .contact-info{
+	visibility: visible;
+}
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+.offscreen {
+   position: absolute;
+   left: -200em;
+   top: -20em;
+}
